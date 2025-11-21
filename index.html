@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>DBMS & SQL Quiz</title>
+<title>DBMS & SQL Quiz (105 Questions)</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
         background: #fff;
         padding: 20px;
         border-radius: 10px;
-        width: 800px;
+        width: 900px;
         margin: auto;
         box-shadow: 0px 0px 10px #ccc;
     }
@@ -51,64 +51,120 @@
 <body>
 
 <div class="quiz-box">
-    <h2>DBMS & SQL Quiz (50 Questions)</h2>
+    <h2>DBMS & SQL Quiz (105 Questions)</h2>
     <form id="quizForm">
 
 <script>
-// QUESTION DATA
+// ALL QUESTIONS 1–105
 const questions = [
-{q:"1. The language used to query data from a database is called:", options:["HTML","XML","SQL","C++"], answer:2},
-{q:"2. A table in relational database is also called as:", options:["Attribute","Relation","Tuple","Entity"], answer:1},
-{q:"3. Which uniquely identifies a row?", options:["Foreign key","Primary key","Candidate key","Alternate key"], answer:1},
-{q:"4. SQL command to create a database:", options:["MAKE DATABASE","NEW DATABASE","CREATE DATABASE","INIT DATABASE"], answer:2},
-{q:"5. In DBMS, a row in a table is:", options:["Tuple","Attribute","Relation","Key"], answer:0},
-{q:"6. Constraint enforcing referential integrity:", options:["Primary Key","Candidate Key","Foreign Key","Unique Key"], answer:2},
+{q:"1. The language used to query data is:", options:["HTML","XML","SQL","C++"], answer:2},
+{q:"2. A table in relational database is:", options:["Attribute","Relation","Tuple","Entity"], answer:1},
+{q:"3. Uniquely identifies a row:", options:["Foreign key","Primary key","Candidate key","Alternate key"], answer:1},
+{q:"4. Create database command:", options:["MAKE DATABASE","NEW DATABASE","CREATE DATABASE","INIT DATABASE"], answer:2},
+{q:"5. Row in a table is:", options:["Tuple","Attribute","Relation","Key"], answer:0},
+{q:"6. Referential integrity is ensured by:", options:["Primary Key","Candidate Key","Foreign Key","Unique Key"], answer:2},
 {q:"7. SQL stands for:", options:["Structured Question Language","Structured Query Language","Sequential Query Language","Simple Query Language"], answer:1},
-{q:"8. Command to drop table structure:", options:["CREATE","ALTER","TRUNCATE","DROP"], answer:3},
-{q:"9. Command to remove database:", options:["DELETE DATABASE","REMOVE DATABASE","DROP DATABASE","CLEAR DATABASE"], answer:2},
+{q:"8. Drop table structure:", options:["CREATE","ALTER","TRUNCATE","DROP"], answer:3},
+{q:"9. Remove database:", options:["DELETE DATABASE","REMOVE DATABASE","DROP DATABASE","CLEAR DATABASE"], answer:2},
 {q:"10. View table structure:", options:["SHOW TABLE","DESC table_name","VIEW STRUCTURE","DISPLAY TABLE"], answer:1},
 {q:"11. Relational model organizes data into:", options:["Trees","Graphs","Tables","Records"], answer:2},
-{q:"12. Constraint matching values across tables:", options:["Primary Key","Foreign Key","Unique","Check"], answer:1},
-{q:"13. SQL is used for:", options:["OS creation","Querying databases","Writing programs","Designing websites"], answer:1},
-{q:"14. GUI tool for MySQL:", options:["MySQL Workbench","SQL Editor","Database Builder","Data Manager"], answer:0},
-{q:"15. NOT a type of key:", options:["Primary Key","Foreign Key","Alternate Key","Parent Key"], answer:3},
-{q:"16. MySQL is suited for:", options:["Relational","Hierarchical","Network","Object-oriented"], answer:0},
-{q:"17. Delete all rows without structure:", options:["DROP","DELETE","REMOVE","TRUNCATE"], answer:3},
+{q:"12. Constraint matching values:", options:["Primary Key","Foreign Key","Unique","Check"], answer:1},
+{q:"13. SQL used for:", options:["OS creation","Querying DB","Programming","Websites"], answer:1},
+{q:"14. GUI tool for MySQL:", options:["MySQL Workbench","SQL Editor","DB Builder","Data Manager"], answer:0},
+{q:"15. NOT a key:", options:["Primary","Foreign","Alternate","Parent"], answer:3},
+{q:"16. MySQL suited for:", options:["Relational","Hierarchical","Network","Object-oriented"], answer:0},
+{q:"17. Delete rows only:", options:["DROP","DELETE","REMOVE","TRUNCATE"], answer:3},
 {q:"18. Retrieves data:", options:["SELECT","INSERT","UPDATE","DELETE"], answer:0},
-{q:"19. Displays all tables:", options:["SHOW DATABASES","SHOW TABLES","LIST TABLES","DESCRIBE DATABASE"], answer:1},
+{q:"19. Show tables:", options:["SHOW DATABASES","SHOW TABLES","LIST TABLES","DESCRIBE DATABASE"], answer:1},
 {q:"20. Backup command:", options:["mysqlbackup","mysqldump","mysqlsave","backupdb"], answer:1},
-{q:"21. Select a database:", options:["USE database","SELECT database","OPEN database","START database"], answer:0},
+{q:"21. Select database:", options:["USE db","SELECT db","OPEN db","START db"], answer:0},
 {q:"22. Create table:", options:["INSERT","CREATE","UPDATE","ALTER"], answer:1},
 {q:"23. Insert data:", options:["ADD","INSERT INTO","UPDATE","APPEND"], answer:1},
-{q:"24. Remove record permanently:", options:["REMOVE","DELETE","DROP","CLEAR"], answer:1},
+{q:"24. Delete record:", options:["REMOVE","DELETE","DROP","CLEAR"], answer:1},
 {q:"25. Filter records:", options:["ORDER BY","WHERE","GROUP BY","HAVING"], answer:1},
 {q:"26. Sort results:", options:["ORDER BY","SORT BY","GROUP BY","HAVING"], answer:0},
-{q:"27. Pattern matching symbol:", options:["*","%","#","&"], answer:1},
+{q:"27. Pattern symbol:", options:["*","%","#","&"], answer:1},
 {q:"28. NOT DML:", options:["SELECT","INSERT","UPDATE","CREATE"], answer:3},
 {q:"29. DDL command:", options:["INSERT","DELETE","CREATE","UPDATE"], answer:2},
-{q:"30. Remove duplicate rows:", options:["UNIQUE","DISTINCT","NODUPLICATE","DIFFERENT"], answer:1},
+{q:"30. Remove duplicates:", options:["UNIQUE","DISTINCT","NODUP","DIFFERENT"], answer:1},
 {q:"31. Rename table:", options:["CHANGE TABLE","RENAME TABLE","ALTER TABLE","MODIFY TABLE"], answer:1},
 {q:"32. Filter groups:", options:["ORDER BY","WHERE","HAVING","DISTINCT"], answer:2},
-{q:"33. NOT aggregate:", options:["SUM()","COUNT()","AVG()","ROUND()"], answer:3},
-{q:"34. * in SELECT means:", options:["Multiply","Select all","Unique rows","Count rows"], answer:1},
+{q:"33. NOT aggregate:", options:["SUM","COUNT","AVG","ROUND"], answer:3},
+{q:"34. * in SELECT:", options:["Multiply","All columns","Unique rows","Count rows"], answer:1},
 {q:"35. Conditional logic:", options:["LOOP","IF()","LEAVE","ITERATE"], answer:1},
-{q:"36. Returns value if NULL:", options:["IF()","IFNULL()","CASE","WHILE"], answer:1},
+{q:"36. If null:", options:["IF()","IFNULL()","CASE","WHILE"], answer:1},
 {q:"37. Exit loop:", options:["ITERATE","LEAVE","REPEAT","WHILE"], answer:1},
-{q:"38. Multi-branch logic:", options:["IF()","IFNULL()","CASE","LOOP"], answer:2},
+{q:"38. Multi-branch:", options:["IF","IFNULL","CASE","LOOP"], answer:2},
 {q:"39. Looping structure:", options:["JOIN","WHILE","SELECT","GROUP BY"], answer:1},
 {q:"40. Filter rows:", options:["ORDER BY","GROUP BY","WHERE","HAVING"], answer:2},
 {q:"41. Filter groups:", options:["WHERE","ORDER BY","GROUP BY","HAVING"], answer:3},
-{q:"42. Subquery example:", options:["SELECT * FROM table","SELECT * FROM table WHERE id IN (SELECT id FROM table2)","UPDATE table","DELETE"], answer:1},
-{q:"43. Correlated sub-query:", options:["No outer reference","References outer query","No WHERE","Updates only"], answer:1},
-{q:"44. Create view:", options:["CREATE TABLE view AS SELECT","CREATE VIEW view AS SELECT","CREATE VIEW TABLE","CREATE SELECT"], answer:1},
+{q:"42. Subquery:", options:["SELECT *","SELECT * WHERE id IN (SELECT id)","UPDATE","DELETE"], answer:1},
+{q:"43. Correlated subquery:", options:["No reference","References outer","No WHERE","Updates"], answer:1},
+{q:"44. Create view:", options:["CREATE TABLE view","CREATE VIEW view AS SELECT","CREATE VIEW TABLE","CREATE SELECT"], answer:1},
 {q:"45. Advantage of views:", options:["Security","More storage","Cannot simplify","Deletes table"], answer:0},
 {q:"46. Update view:", options:["ALTER VIEW","UPDATE VIEW","MODIFY VIEW","CREATE VIEW"], answer:0},
 {q:"47. Delete view:", options:["DROP TABLE","DELETE VIEW","DROP VIEW","REMOVE VIEW"], answer:2},
 {q:"48. Repeat until false:", options:["IF","REPEAT","CASE","LEAVE"], answer:1},
-{q:"49. WHILE loop condition checked:", options:["Before body","After body","Randomly","Once"], answer:0},
-{q:"50. Test for NULL:", options:["= NULL","IS NULL","LIKE NULL","NOT NULL"], answer:1},
-];
+{q:"49. WHILE condition checked:", options:["Before body","After body","Random","Once"], answer:0},
+{q:"50. Test NULL:", options:["= NULL","IS NULL","LIKE NULL","NOT NULL"], answer:1},
 
+// NEW QUESTIONS 51–105
+{q:"51. Sub-query executed for each row:", options:["Scalar","Correlated","Non-correlated","Inline view"], answer:1},
+{q:"52. Drop table view depends on:", options:["Nothing","Updated","Invalid","Deleted"], answer:2},
+{q:"53. View scan helps in:", options:["Reduce complexity","Store permanently","Avoid indexing","Increase table size"], answer:0},
+{q:"54. Two+ column index:", options:["Simple","Primary","Compound","Unique"], answer:2},
+{q:"55. Create sequence:", options:["CREATE SEQUENCE","MAKE SEQUENCE","NEW SEQUENCE","GENERATE SEQUENCE"], answer:0},
+{q:"56. Change increment:", options:["MODIFY","ALTER","UPDATE","CHANGE"], answer:1},
+{q:"57. Delete sequence:", options:["DROP SEQUENCE","REMOVE","DELETE","ERASE"], answer:0},
+{q:"58. Rows with matches only:", options:["Outer","Inner","Cross","Self"], answer:1},
+{q:"59. Table joins itself:", options:["Cross","Self","Outer","Composite"], answer:1},
+{q:"60. SAVEPOINT:", options:["Auto commit","Partial rollback","Delete data","End transaction"], answer:1},
+{q:"61. Database is:", options:["Language","Interrelated data","Algorithms","Web pages"], answer:1},
+{q:"62. DBMS example:", options:["Word","Photoshop","Oracle","PowerPoint"], answer:2},
+{q:"63. SQL stands for:", options:["Structured Query Language","Simple Query","Sequential Query","Standard Question"], answer:0},
+{q:"64. Foreign key role:", options:["Encrypt","Links tables","Deletes","Sorts"], answer:1},
+{q:"65. Column represents:", options:["Record","Tuple","Key","Attribute"], answer:3},
+{q:"66. CHECK (>18):", options:["<18","=18",">18","!=18"], answer:2},
+{q:"67. All rows + NULL:", options:["Inner","Natural","Full Outer","Left"], answer:2},
+{q:"68. UNION:", options:["Join side by side","Return duplicates","Combine & remove duplicates","Create table"], answer:2},
+{q:"69. Keep duplicates:", options:["UNION EVERY","UNION ALL","UNION DISTINCT","INTERSECT"], answer:1},
+{q:"70. Sort:", options:["ORDER","SORT BY","ORDER BY","GROUP BY"], answer:2},
+{q:"71. Limit rows:", options:["TOP","FIRST","LIMIT","ROWS"], answer:2},
+{q:"72. Create user:", options:["ADD USER","NEW USER","CREATE USER","MAKE USER"], answer:2},
+{q:"73. Delete user:", options:["DROP USER","DELETE USER","REMOVE USER","ERASE USER"], answer:0},
+{q:"74. Give permission:", options:["PERMIT","ALLOW","GRANT","ENABLE"], answer:2},
+{q:"75. MySQL advantage:", options:["Open source","Doesn’t support SQL","Programming lang","Enterprise only"], answer:0},
+{q:"76. Test server:", options:["Workbench","Excel","PowerPoint","Notepad"], answer:0},
+{q:"77. Configuration Wizard:", options:["Writes queries","Sets server parameters","Installs drivers","Creates user accounts"], answer:1},
+{q:"78. MySQL Installer:", options:["Write SQL","Network config","Install & manage MySQL","Test performance"], answer:2},
+{q:"79. Select DB:", options:["SELECT","OPEN","CHOOSE","USE"], answer:3},
+{q:"80. Undo transaction:", options:["REVERSE","CANCEL","COMMIT","ROLLBACK"], answer:3},
+{q:"81. UNION vs UNION ALL:", options:["Includes dup","Removes dup","Same","Only UNION sorts"], answer:1},
+{q:"82. Same columns needed:", options:["JOIN","UNION","NATURAL JOIN","SUBQUERY"], answer:1},
+{q:"83. SHOW TABLES:", options:["DML","DDL","Meta data","Transaction"], answer:2},
+{q:"84. Take permissions back:", options:["DENY","REVOKE","REMOVE","CANCEL"], answer:1},
+{q:"85. Permanent transaction:", options:["SAVE","ROLLBACK","COMMIT","EXECUTE"], answer:2},
+{q:"86. Create procedure:", options:["MAKE","CREATE PROCEDURE","NEW","ADD"], answer:1},
+{q:"87. Remove procedure:", options:["DROP PROCEDURE","DELETE","REMOVE","CLEAR"], answer:0},
+{q:"88. Execute procedure:", options:["EXEC","EXECUTE","CALL","RUN"], answer:2},
+{q:"89. Create trigger:", options:["ADD TRIGGER","CREATE TRIGGER","NEW TRIGGER","MAKE TRIGGER"], answer:1},
+{q:"90. Trigger operations:", options:["SELECT","INSERT UPDATE DELETE","EXECUTE","CREATE"], answer:1},
+{q:"91. Cursor used for:", options:["Store procedures","Row-by-row","Trigger exec","Drop tables"], answer:1},
+{q:"92. Remove trigger:", options:["DROP TRIGGER","DELETE","REMOVE","CLEAR"], answer:0},
+{q:"93. Create function:", options:["CREATE FUNCTION","ADD","MAKE","EXECUTE"], answer:0},
+{q:"94. Remove function:", options:["DROP FUNCTION","DELETE","REMOVE","END"], answer:0},
+{q:"95. Trigger fires on:", options:["DB event","INSERT UPDATE DELETE","Restart","Procedure"], answer:1},
+{q:"96. Define cursor:", options:["DECLARE ... CURSOR","CREATE CURSOR","OPEN CURSOR","NEW CURSOR"], answer:0},
+{q:"97. Activate cursor:", options:["START","OPEN","FETCH","DECLARE"], answer:1},
+{q:"98. Get next row:", options:["GET","SELECT","FETCH","PULL"], answer:2},
+{q:"99. Close cursor:", options:["END CURSOR","DROP CURSOR","CLOSE","EXIT"], answer:2},
+{q:"100. End procedure:", options:["END","STOP","TERMINATE","FINISH"], answer:0},
+{q:"101. Default parameter mode:", options:["IN","OUT","INOUT","NONE"], answer:0},
+{q:"102. Trigger associated with:", options:["One table","Two","Many","None"], answer:0},
+{q:"103. Cannot activate trigger:", options:["INSERT","UPDATE","DELETE","SELECT"], answer:3},
+{q:"104. Cursor order:", options:["OPEN→DECLARE","DECLARE→OPEN→FETCH→CLOSE","FETCH→OPEN","DECLARE→FETCH"], answer:1},
+{q:"105. Initialize cursor:", options:["OPEN","START","BEGIN","INIT"], answer:0},
+];
 </script>
 
 <script>
