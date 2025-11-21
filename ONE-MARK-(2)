@@ -1,0 +1,330 @@
+51.	Which type of sub-query is executed for each row of the outer query?
+A) Scalar sub-query
+B) Correlated sub-query
+C) Non-correlated sub-query
+D) Inline view
+Answer: B
+52.	What happens if you drop a table on which a view depends?
+A) Nothing, the view still works
+B) The view is automatically updated
+C) The view becomes invalid
+D) The view is automatically deleted
+Answer: C
+53.	View scan helps in:
+A) Reducing query complexity
+B) Storing data permanently
+C) Avoiding indexing
+D) Increasing table size
+Answer: A
+54.	What type of index uses a combination of two or more columns?
+A) Simple Index
+B) Primary Index
+C) Compound Index
+D) Unique Index
+Answer: C
+55.	Which command is used to create a sequence in SQL?
+A) CREATE SEQUENCE
+B) MAKE SEQUENCE
+C) NEW SEQUENCE
+D) GENERATE SEQUENCE
+Answer: A
+56.	Which clause would you use to change the increment value of an existing sequence?
+A) MODIFY SEQUENCE
+B) ALTER SEQUENCE
+C) UPDATE SEQUENCE
+D) CHANGE SEQUENCE
+Answer: B
+57.	What is the command to delete a sequence in SQL?
+A) DROP SEQUENCE
+B) REMOVE SEQUENCE
+C) DELETE SEQUENCE
+D) ERASE SEQUENCE
+Answer: A
+58.	Which join returns only the rows with matching values in both tables?
+A) Outer Join
+B) Inner Join
+C) Cross Join
+D) Self Join
+Answer: B
+59.	A join that relates a table to itself is called:
+A) Cross Join
+B) Self Join
+C) Outer Join
+D) Composite Join
+Answer: B
+60.	What is the purpose of a SAVEPOINT in a transaction?
+A) Automatically commits changes
+B) Allows partial rollback
+C) Deletes data
+D) Ends a transaction
+Answer: B
+61.	Define the term "database".
+A) A programming language
+B) A collection of interrelated data
+C) A set of algorithms
+D) A collection of web pages
+Answer: B
+62.	Identify which of the following is a database management system.
+A) MS Word
+B) Photoshop
+C) Oracle
+D) MS Power Point
+Answer: C
+63.	Recall what SQL stands for.
+A) Structured Query Language
+B) Simple Query Language
+C) Sequential Query Language
+D) Standard Question Language
+Answer: A
+64.	Explain the role of a foreign key in table relationships.
+A) Encrypts data
+B) Links tables
+C) Deletes records
+D) Sorts data
+Answer: B
+65.	Recall what each column in a table represents.
+A) A record
+B) A tuple
+C) A key
+D) An attribute
+Answer: D
+66.	Apply the CHECK constraint to restrict age values to above 18.
+A) CHECK (age < 18)
+B) CHECK (age = 18)
+C) CHECK (age > 18)
+D) CHECK (age != 18)
+Answer: C
+67.	Which join returns all rows from both tables, with NULLs where there is no match?
+A) Inner Join
+B) Natural Join
+C) Full Outer Join
+D) Left Join
+Answer: C
+68.	What does the UNION operator do in SQL?
+A) Joins tables side by side
+B) Returns duplicate rows from multiple queries
+C) Combines result sets and removes duplicates
+D) Creates a new table
+Answer: C
+69.	Which SQL clause keeps duplicates in union results?
+A) UNION EVERY
+B) UNION ALL
+C) UNION DISTINCT
+D) INTERSECT
+Answer: B
+70.	Which clause is used to sort the result set?
+A) ORDER
+B) SORT BY
+C) ORDER BY
+D) GROUP BY
+Answer: C
+71.	What clause limits the number of rows returned?
+A) TOP
+B) FIRST
+C) LIMIT
+D) ROWS
+Answer: C
+72.	Which command is used to create a new user in SQL?
+A) ADD USER
+B) NEW USER
+C) CREATE USER
+D) MAKE USER
+Answer: C
+73.	Which command is used to delete a user?
+A) DROP USER
+B) DELETE USER
+C) REMOVE USER
+D) ERASE USER
+Answer: A
+74.	What command is used to give permissions to a user?
+A) PERMIT
+B) ALLOW
+C) GRANT
+D) ENABLE
+Answer: C
+75.	Evaluate the advantages of using MySQL over other DBMS tools.
+A) It’s open-source and uses SQL
+B) It doesn’t support SQL
+C) It’s a programming language
+D) It’s only for large enterprises
+Answer: A
+76.	Apply the correct method to test MySQL Server connectivity.
+A) Use MySQL Workbench
+B) Use Excel
+C) Use PowerPoint
+D) Use Notepad
+Answer: A
+77.	Explain the role of the Configuration Wizard in MySQL installation.
+A) It writes SQL queries
+B) It sets up server parameters
+C) It installs drivers
+D) It creates user accounts
+Answer: B
+78.	Define the purpose of MySQL Installer for Windows.
+A) To write SQL queries
+B) To configure network settings
+C) To install and manage MySQL components
+D) To test database performance
+Answer: C
+79.	Identify the correct syntax to select a database for use.
+A) SELECT DATABASE db_name;
+B) OPEN db_name;
+C) CHOOSE db_name;
+D) USE db_name;
+Answer: D
+80.	Which command is used to undo a transaction?
+A) REVERSE
+B) CANCEL
+C) COMMIT
+D) ROLLBACK
+Answer: D
+81.	What is the difference between UNION and UNION ALL?
+A) UNION includes duplicates, UNION ALL removes them
+B) UNION removes duplicates, UNION ALL includes them
+C) They are identical
+D) Only UNION can sort results
+Answer: B
+82.	Which of these requires the same number and order of columns to work properly?
+A) JOIN
+B) UNION
+C) NATURAL JOIN
+D) SUBQUERY
+Answer: B
+83.	Classify the following SQL command: SHOW TABLES;
+A) Data manipulation
+B) Data definition
+C) Meta data retrieval
+D) Transaction control
+Answer: C
+84.	What command is used to take back permissions from a user?
+A) DENY
+B) REVOKE
+C) REMOVE
+D) CANCEL
+Answer: B
+85.	Which command is used to make a transaction permanent?
+A) SAVE
+B) ROLLBACK
+C) COMMIT
+D) EXECUTE
+Answer: C
+86.	Which keyword is used to create a stored procedure in MySQL?
+A) MAKE PROCEDURE
+B) CREATE PROCEDURE
+C) NEW PROCEDURE
+D) PROCEDURE ADD
+Answer: B
+87.	Which statement is used to remove a stored procedure?
+A) DROP PROCEDURE
+B) DELETE PROCEDURE
+C) REMOVE PROCEDURE
+D) CLEAR PROCEDURE
+Answer: A
+88.	Which clause is used to execute a stored procedure?
+A) EXEC
+B) EXECUTE
+C) CALL
+D) RUN
+Answer: C
+89.	Which command is used to create a trigger in MySQL?
+A) ADD TRIGGER
+B) CREATE TRIGGER
+C) NEW TRIGGER
+D) MAKE TRIGGER
+Answer: B
+90.	Triggers in MySQL can be fired on which operations?
+A) SELECT only
+B) INSERT, UPDATE, DELETE
+C) EXECUTE only
+D) CREATE only
+Answer: B
+91.	A cursor is mainly used for:
+A) Storing procedures
+B) Row-by-row processing of query results
+C) Trigger execution
+D) Dropping tables
+Answer: B
+92.	Which statement is used to remove a trigger?
+A) DROP TRIGGER
+B) DELETE TRIGGER
+C) REMOVE TRIGGER
+D) CLEAR TRIGGER
+Answer: A
+93.	Which command is used to create stored functions?
+A) CREATE FUNCTION
+B) ADD FUNCTION
+C) MAKE FUNCTION
+D) EXECUTE FUNCTION
+Answer: A
+94.	Which keyword is used to remove a stored function?
+A) DROP FUNCTION
+B) DELETE FUNCTION
+C) REMOVE FUNCTION
+D) END FUNCTION
+Answer: A
+95.	A trigger is automatically executed in response to:
+A) A database event
+B) A database event (INSERT, UPDATE, DELETE)
+C) A server restart
+D) A stored procedure execution
+Answer: B
+96.	Which statement is used to define a cursor in MySQL?
+A) DECLARE cursor_name CURSOR FOR SELECT statement;
+B) CREATE cursor_name CURSOR FOR SELECT statement;
+C) OPEN cursor_name FOR SELECT statement;
+D) NEW CURSOR SELECT statement;
+Answer: A
+97.	After declaring a cursor, which command is used to activate it?
+A) START
+B) OPEN
+C) FETCH
+D) DECLARE
+Answer: B
+98.	Which command retrieves the next row from a cursor?
+A) GET
+B) SELECT
+C) FETCH
+D) PULL
+Answer: C
+99.	Which statement is used to close a cursor?
+A) END CURSOR
+B) DROP CURSOR
+C) CLOSE
+D) EXIT CURSOR
+Answer: C
+100.	Which keyword is used to end a stored procedure in MySQL?
+A) END
+B) STOP
+C) TERMINATE
+D) FINISH
+Answer: A
+101.	What is the default parameter mode in MySQL stored procedures?
+A) IN
+B) OUT
+C) INOUT
+D) NONE
+Answer: A
+102.	A trigger can be associated with how many tables?
+A) Only one table
+B) Two tables
+C) Any number of tables
+D) None
+Answer: A
+103.	Which of the following events cannot activate a trigger?
+A) INSERT
+B) UPDATE
+C) DELETE
+D) SELECT
+Answer: D
+104.	What is the correct order of cursor operations?
+A) OPEN → DECLARE → FETCH → CLOSE
+B) DECLARE → OPEN → FETCH → CLOSE
+C) FETCH → OPEN → DECLARE → CLOSE
+D) DECLARE → FETCH → OPEN → CLOSE
+Answer: B
+105.	Which command is used to initialize a cursor in MySQL?
+A) OPEN
+B) START
+C) BEGIN
+D) INIT
+Answer: A
