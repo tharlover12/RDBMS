@@ -1,0 +1,109 @@
+PART-B
+1. What is a database?
+2. Define relation in DBMS.
+3. What is a primary key? Give an example.
+4. Differentiate between SQL and MySQL.
+5. Which command is used to create a new database in MySQL? Give example.
+6. Explain uses of the SHOW command.
+7. What is the use of DESCRIBE command in MySQL?
+8. What is the role of constraints in relational databases?
+9. List the features of MySQL.
+10. Differentiate between SHOW DATABASES and SHOW TABLES.
+11. List any two MySQL data types with examples.
+12. Write two examples of SELECT command.
+13. Write any two Aggregate Functions.
+14. Write two Conversion Functions with examples.
+15.Differentiate between TRUNCATE and DELETE.
+16. Write any two Date Functions in MySQL.
+17. Write a MySQL query to find the maximum salary from the employees table.
+18. What is the use of the LIKE operator in MySQL?
+19. What is the purpose of Data Retrieval Commands in MySQL?
+20. What is the role of the INSERT command in MySQL?
+21. What is the use of IF() in MySQL?
+22. What does IFNULL() do?
+23. List the looping statements in MySQL.
+24. What is the purpose of LEAVE and ITERATE in loops?
+25. What is the difference between WHERE and HAVING in MySQL?
+26. Name two clauses used to sort and group data in MySQL.
+27. What is a view in MySQL?
+28. How do you create a simple view?
+29. How do you update a view?
+30. How do you delete a view?
+31. What is an index in SQL? Give its advantages.
+32. Differentiate between Index and Sequence.
+33. Define Self Join with an example.
+34. What is the difference between UNION and UNIONALL?
+35. What is the purpose of the COMMIT command?
+36. Explain LIMIT handling in MySQL with example.
+37. How is ORDER BY used with UNION in MySQL?
+38. Explain UNION in MySQL with example.
+39. Write the difference between ROLLBACK and SAVEPOINT.
+40. Difference between UNION and JOIN.
+41. How is a stored procedure executed in MySQL?
+42. Write the command to delete a stored function with example.
+43.What are the advantages of stored procedures?
+44.What is a trigger in MySQL?
+45.Write the syntax to create a trigger.
+46. How do you delete a trigger in MySQL with example?
+47.Write any two uses of triggers.
+48.Write a command to remove a trigger named audit_ trigger.
+49.Write the syntax for fetching data from a cursor.
+50. What is the use of the NOT FOUND handler in a cursor?
+PART-C
+1 1-7839 State the components of DBMS in relational data model.
+2 1-8068 Write three advantages of using DBMS.
+3 1-8102 Explain backing up databases in MySQL.
+4 1-8249 Explain different types of keys in a relational database with Examples.
+5 1-8253 Describe Codd’s 12 rules of RDBMS (any three).
+6 1-8258 Explain the process of installing MySQL on Windows.
+7 1-8340 Explain the process of creating, modifying, and deleting tables in MySQL.
+8 1-8345 Explain the difference between TRUNCATE, DELETE, and DROP.
+9 1-8394 Explain different types of constraints in RDBMS with examples.
+10 1-8409 Explain the process of backup and recovery in MySQL.
+11 2-9186 List the different datatypes in Mysql with examples.
+12 2-9235 Discuss MySQL operators with examples.
+13 2-9261 Explain Aggregate functions in MySQL with examples.
+14 2-9295 What are Conversion functions in MySQL? Explain with examples.
+15 2-9390 Explain Data Definition Commands in MySQL with examples.
+16 2-9428 Explain Data Manipulation Commands in MySQL with examples.
+17 2-9492 Explain Data Retrieval Commands in MySQL with examples.
+18 2-9511 Explain Single Row functions in MySQL with examples.
+19 2-9548 Differentiate between DDL and DML commands with examples.
+20 2-9579 What is Pattern Matching in MySQL? Give examples.
+21 3-16523 What is CASE in MySQL? Write syntax.
+22 3-16524 What is a sub-query with example?
+23 3-16525 What is a correlated sub-query with example?
+24. What is the use of ALL / ANY in sub-queries?
+25. What is the difference between ORDER BY ASC and DESC?
+26. What are the advantages of views in MySQL?
+27. Write a query to create a view showing only employee names and salaries.
+28.Write difference between WHILE and REPEAT loop.
+29. Explain the use of GROUP BY clause in MySQL .Write syntax.
+30 3-16538 What is the use of WHILE loop in MySQL? Write syntax.
+31 4-17119 Difference between Simple and Compound Index with Example.
+32 4-17128 Explain how to create, modify, and delete a sequence inSQL with
+examples.
+33 4-17134 Difference between Inner Join, Outer Join, and Self Join in MySQL.
+34 4-17158 Compare the following SQL operators: UNION,UNION ALL, and UNION
+DISTINCT.
+35 4-17162 Write SQL commands to: 
+(i) create a user, 
+(ii) grant privileges, 
+(iii) revoke privileges.
+36 4-17164 Define COMMIT, ROLLBACK, and SAVEPOINT in transaction control.
+37 4-17168 Explain the working of a RIGHT OUTERJOIN with a suitable example.
+38 4-17172 What is the difference between GRANT and REVOKE commands in SQL? Give examples.
+39 4-17175 What are some common user permissions in MySQL?
+40 4-17194 Explain the difference between LEFT OUTER JOIN and RIGHT OUTER JOIN in MySQL with example.
+41 5-17205 What is a Stored Procedure in MySQL? Explain with syntax.
+42 5-17215 How do you create a stored function in MySQL?
+43 5-17218 What is a Trigger in MySQL? Write the syntax.
+44 5-17221 What is a Cursor in MySQL? Write steps to create a Cursor in a
+Stored procedure.
+45 5-17227 Explain the difference between Stored Procedure and Stored Function in MySQL.
+46 5-17229 What are IN, OUT, and INOUT parameters in MySQL stored procedures?
+47 5-17237 What are the uses of Triggers in MySQL?
+48 5-17240 How do you drop a stored procedure, function, or trigger in MySQL?
+49 5-17244 List the types of triggers in MySQL?
+50 5-17246 What is the difference between BEFORE and AFTER triggers in MySQL?
+Powered 
