@@ -1,0 +1,301 @@
+PART-A
+1.	The language used to query data from a database is called:
+A) HTML
+B) XML
+C) SQL
+D) C++
+Answer: C
+2.	A table in relational database is also called as:
+A) Attribute
+B) Relation
+C) Tuple
+D) Entity
+Answer: B
+3.	Which of the following uniquely identifies a row in a table?
+A) Foreign key
+B) Primary key
+C) Candidate key
+D) Alternate key
+Answer: B
+4.	Which SQL command is used to create a database?
+A) MAKE DATABASE
+B) NEW DATABASE
+C) CREATE DATABASE
+D) INIT DATABASE
+Answer: C
+5.	In DBMS, a row in a table is called:
+A) Tuple
+B) Attribute
+C) Relation
+D) Key
+Answer: A
+6.	The constraint that enforces referential integrity is:
+A) Primary Key
+B) Candidate Key
+C) Foreign Key
+D) Unique Key
+Answer: C
+7.	SQL stands for:
+A) Structured Question Language
+B) Structured Query Language
+C) Sequential Query Language
+D) Simple Query Language
+Answer: B
+8.	Name the command which is used to drop the structure of the table.
+A) CREATE
+B) ALTER
+C) TRUNCATE
+D) DROP
+Answer: D
+9.	Which SQL command is used to remove a database?
+A) DELETE DATABASE
+B) REMOVE DATABASE
+C) DROP DATABASE
+D) CLEAR DATABASE
+Answer: C
+10.	Which command is used to view the structure of a table?
+A) SHOW TABLE
+B) DESC table_name
+C) VIEW STRUCTURE
+D) DISPLAY TABLE
+Answer: B
+11.	The relational model organizes data into:
+A) Trees
+B) Graphs
+C) Tables
+D) Records
+Answer: C
+12.	Which constraint ensures values in one table match values in another table?
+A) Primary Key
+B) Foreign Key
+C) Unique
+D) Check
+Answer: B
+13.	SQL is used for:
+A) Creating operating systems
+B) Querying relational databases
+C) Writing programs
+D) Designing websites
+Answer: B
+14.	Which tool provides a GUI to design and manage MySQL databases?
+A) MySQL Workbench
+B) SQL Editor
+C) Database Builder
+D) Data Manager
+Answer: A
+15.	Which of the following is NOT a type of key in DBMS?
+A) Primary Key
+B) Foreign Key
+C) Alternate Key
+D) Parent Key
+Answer: D
+16.	MYSQL is best suited for which type of databases?
+A) Relational
+B) Hierarchical
+C) Network
+D) Object-oriented
+Answer: A
+17.	Which command is used to delete all rows of a table without removing its structure?
+A) DROP
+B) DELETE
+C) REMOVE
+D) TRUNCATE
+Answer: D
+18.	Which SQL command retrieves data from a database?
+A) SELECT
+B) INSERT
+C) UPDATE
+D) DELETE
+Answer: A
+19.	Which command displays all tables in a selected database?
+A) SHOW DATABASES
+B) SHOW TABLES
+C) LIST TABLES
+D) DESCRIBE DATABASE
+Answer: B
+20.	Which command is used to back up a MySQL database from the terminal?
+A) mysqlbackup
+B) mysqldump
+C) mysqlsave
+D) backupdb
+Answer: B
+21.	Which MySQL statement is used to select a database before use?
+A) USE database_name
+B) SELECT database_name
+C) OPEN database_name
+D) START database_name
+Answer: A
+22.	Which SQL command is used to create a new table in MySQL?
+A) INSERT
+B) CREATE
+C) UPDATE
+D) ALTER
+Answer: B
+23.	Which SQL statement is used to insert new data into a table?
+A) ADD
+B) INSERT INTO
+C) UPDATE
+D) APPEND
+Answer: B
+24.	The SQL command used to remove a record permanently from a table is:
+A) REMOVE
+B) DELETE
+C) DROP
+D) CLEAR
+Answer: B
+25.	Which clause is used with SELECT to filter records in MySQL?
+A) ORDER BY
+B) WHERE
+C) GROUP BY
+D) HAVING
+Answer: B
+26.	Which SQL clause is used to sort the results?
+A) ORDER BY
+B) SORT BY
+C) GROUP BY
+D) HAVING
+Answer: A
+27.	Which symbol is used in SQL for pattern matching with LIKE?
+A) *
+B) %
+C) #
+D) &
+Answer: B
+28.	Which of the following is not a Data Manipulation Language (DML) command?
+A) SELECT
+B) INSERT
+C) UPDATE
+D) CREATE
+Answer: D
+29.	Which of the following is a Data Definition Language (DDL) command?
+A) INSERT
+B) DELETE
+C) CREATE
+D) UPDATE
+Answer: C
+30.	In MySQL, which keyword is used to eliminate duplicate rows in the result?
+A) UNIQUE
+B) DISTINCT
+C) NODUPLICATE
+D) DIFFERENT
+Answer: B
+31.	Which command is used to rename a table in MySQL?
+A) CHANGE TABLE
+B) RENAME TABLE
+C) ALTER TABLE
+D) MODIFY TABLE
+Answer: B
+32.	Which MySQL clause is used to filter groups formed by GROUP BY?
+A) ORDER BY
+B) WHERE
+C) HAVING
+D) DISTINCT
+Answer: C
+33.	Which of the following is not an aggregate function in MySQL?
+A) SUM()
+B) COUNT()
+C) AVG()
+D) ROUND()
+Answer: D
+34.	What does the * symbol in SELECT * FROM TABLE; represent?
+A) Multiply column values
+B) Select all columns
+C) Select unique rows
+D) Count all rows
+Answer: B
+35.	Which of the following is used to execute conditional logic in MySQL?
+A) LOOP
+B) IF()
+C) LEAVE
+D) ITERATE
+Answer: B
+36.	Which function returns a specified value if an expression is NULL?
+A) IF()
+B) IFNULL()
+C) CASE
+D) WHILE
+Answer: B
+37.	Which flow control statement allows you to exit a loop immediately?
+A) ITERATE
+B) LEAVE
+C) REPEAT
+D) WHILE
+Answer: B
+38.	Which statement is used for multi-branch conditional logic in MySQL?
+A) IF()
+B) IFNULL()
+C) CASE
+D) LOOP
+Answer: C
+39.	Which of the following is a looping structure in MySQL?
+A) JOIN
+B) WHILE
+C) SELECT
+D) GROUP BY
+Answer: B
+40.	Which clause is used to filter rows in MySQL?
+A) ORDER BY
+B) GROUP BY
+C) WHERE
+D) HAVING
+Answer: C
+41.	Which clause is used to filter groups after aggregation?
+A) WHERE
+B) ORDER BY
+C) GROUP BY
+D) HAVING
+Answer: D
+42.	Which of the following is a sub-query?
+A) SELECT * FROM table;
+B) SELECT * FROM table WHERE id IN (SELECT id FROM table2);
+C) UPDATE table SET col=val;
+D) DELETE FROM table;
+Answer: B
+43.	What is a correlated sub-query?
+A) A query that does not reference any outer query
+B) A query that references columns from the outer query
+C) A query without WHERE clause
+D) A query that only updates data
+Answer: B
+44.	Which of the following is a correct way to create a view?
+A) CREATE TABLE view_name AS SELECT * FROM table;
+B) CREATE VIEW view_name AS SELECT * FROM table;
+C) CREATE VIEW view_name TABLE SELECT * FROM table;
+D) CREATE SELECT view_name AS table;
+Answer: B
+45.	Which of the following is an advantage of using views?
+A) Improves security by restricting access to specific columns
+B) Increases storage requirement
+C) Cannot simplify complex queries
+D) Deletes the underlying table
+Answer: A
+46.	How do you update an existing view?
+A) ALTER VIEW view_name AS SELECT ...;
+B) UPDATE VIEW view_name AS SELECT ...;
+C) MODIFY VIEW view_name AS SELECT ...;
+D) CREATE VIEW view_name AS SELECT ...;
+Answer: A
+47.	How do you delete a view in MySQL?
+A) DROP TABLE view_name;
+B) DELETE VIEW view_name;
+C) DROP VIEW view_name;
+D) REMOVE VIEW view_name;
+Answer: C
+48.	Which statement repeats a block of statements until a condition becomes false?
+A) IF
+B) REPEAT
+C) CASE
+D) LEAVE
+Answer: B
+49.	In a WHILE loop, where is the loop condition checked?
+A) Before executing the loop body
+B) After executing the loop body
+C) Randomly
+D) Only once
+Answer: A
+50.	Which operator is used to test for NULL values in SQL?
+A) = NULL
+B) IS NULL
+C) LIKE NULL
+D) NOT NULL
+Answer: B
