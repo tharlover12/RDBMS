@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DBMS & SQL Quiz</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+    }
+    .quiz-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 800px;
+        margin: auto;
+        box-shadow: 0px 0px 10px #ccc;
+    }
+    h2 { margin-top: 0; }
+    .question {
+        font-weight: bold;
+        margin: 15px 0 5px;
+    }
+    .options label {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    #submitBtn {
+        padding: 10px 20px;
+        background: green;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #result {
+        margin-top: 20px;
+        padding: 20px;
+        background: #e7f4ff;
+        border-left: 4px solid #007acc;
+    }
+    .wrong {
+        color: red;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="quiz-box">
+    <h2>DBMS & SQL Quiz (50 Questions)</h2>
+    <form id="quizForm">
+
+<script>
+// QUESTION DATA
+const questions = [
+{q:"1. The language used to query data from a database is called:", options:["HTML","XML","SQL","C++"], answer:2},
+{q:"2. A table in relational database is also called as:", options:["Attribute","Relation","Tuple","Entity"], answer:1},
+{q:"3. Which uniquely identifies a row?", options:["Foreign key","Primary key","Candidate key","Alternate key"], answer:1},
+{q:"4. SQL command to create a database:", options:["MAKE DATABASE","NEW DATABASE","CREATE DATABASE","INIT DATABASE"], answer:2},
+{q:"5. In DBMS, a row in a table is:", options:["Tuple","Attribute","Relation","Key"], answer:0},
+{q:"6. Constraint enforcing referential integrity:", options:["Primary Key","Candidate Key","Foreign Key","Unique Key"], answer:2},
+{q:"7. SQL stands for:", options:["Structured Question Language","Structured Query Language","Sequential Query Language","Simple Query Language"], answer:1},
+{q:"8. Command to drop table structure:", options:["CREATE","ALTER","TRUNCATE","DROP"], answer:3},
+{q:"9. Command to remove database:", options:["DELETE DATABASE","REMOVE DATABASE","DROP DATABASE","CLEAR DATABASE"], answer:2},
+{q:"10. View table structure:", options:["SHOW TABLE","DESC table_name","VIEW STRUCTURE","DISPLAY TABLE"], answer:1},
+{q:"11. Relational model organizes data into:", options:["Trees","Graphs","Tables","Records"], answer:2},
+{q:"12. Constraint matching values across tables:", options:["Primary Key","Foreign Key","Unique","Check"], answer:1},
+{q:"13. SQL is used for:", options:["OS creation","Querying databases","Writing programs","Designing websites"], answer:1},
+{q:"14. GUI tool for MySQL:", options:["MySQL Workbench","SQL Editor","Database Builder","Data Manager"], answer:0},
+{q:"15. NOT a type of key:", options:["Primary Key","Foreign Key","Alternate Key","Parent Key"], answer:3},
+{q:"16. MySQL is suited for:", options:["Relational","Hierarchical","Network","Object-oriented"], answer:0},
+{q:"17. Delete all rows without structure:", options:["DROP","DELETE","REMOVE","TRUNCATE"], answer:3},
+{q:"18. Retrieves data:", options:["SELECT","INSERT","UPDATE","DELETE"], answer:0},
+{q:"19. Displays all tables:", options:["SHOW DATABASES","SHOW TABLES","LIST TABLES","DESCRIBE DATABASE"], answer:1},
+{q:"20. Backup command:", options:["mysqlbackup","mysqldump","mysqlsave","backupdb"], answer:1},
+{q:"21. Select a database:", options:["USE database","SELECT database","OPEN database","START database"], answer:0},
+{q:"22. Create table:", options:["INSERT","CREATE","UPDATE","ALTER"], answer:1},
+{q:"23. Insert data:", options:["ADD","INSERT INTO","UPDATE","APPEND"], answer:1},
+{q:"24. Remove record permanently:", options:["REMOVE","DELETE","DROP","CLEAR"], answer:1},
+{q:"25. Filter records:", options:["ORDER BY","WHERE","GROUP BY","HAVING"], answer:1},
+{q:"26. Sort results:", options:["ORDER BY","SORT BY","GROUP BY","HAVING"], answer:0},
+{q:"27. Pattern matching symbol:", options:["*","%","#","&"], answer:1},
+{q:"28. NOT DML:", options:["SELECT","INSERT","UPDATE","CREATE"], answer:3},
+{q:"29. DDL command:", options:["INSERT","DELETE","CREATE","UPDATE"], answer:2},
+{q:"30. Remove duplicate rows:", options:["UNIQUE","DISTINCT","NODUPLICATE","DIFFERENT"], answer:1},
+{q:"31. Rename table:", options:["CHANGE TABLE","RENAME TABLE","ALTER TABLE","MODIFY TABLE"], answer:1},
+{q:"32. Filter groups:", options:["ORDER BY","WHERE","HAVING","DISTINCT"], answer:2},
+{q:"33. NOT aggregate:", options:["SUM()","COUNT()","AVG()","ROUND()"], answer:3},
+{q:"34. * in SELECT means:", options:["Multiply","Select all","Unique rows","Count rows"], answer:1},
+{q:"35. Conditional logic:", options:["LOOP","IF()","LEAVE","ITERATE"], answer:1},
+{q:"36. Returns value if NULL:", options:["IF()","IFNULL()","CASE","WHILE"], answer:1},
+{q:"37. Exit loop:", options:["ITERATE","LEAVE","REPEAT","WHILE"], answer:1},
+{q:"38. Multi-branch logic:", options:["IF()","IFNULL()","CASE","LOOP"], answer:2},
+{q:"39. Looping structure:", options:["JOIN","WHILE","SELECT","GROUP BY"], answer:1},
+{q:"40. Filter rows:", options:["ORDER BY","GROUP BY","WHERE","HAVING"], answer:2},
+{q:"41. Filter groups:", options:["WHERE","ORDER BY","GROUP BY","HAVING"], answer:3},
+{q:"42. Subquery example:", options:["SELECT * FROM table","SELECT * FROM table WHERE id IN (SELECT id FROM table2)","UPDATE table","DELETE"], answer:1},
+{q:"43. Correlated sub-query:", options:["No outer reference","References outer query","No WHERE","Updates only"], answer:1},
+{q:"44. Create view:", options:["CREATE TABLE view AS SELECT","CREATE VIEW view AS SELECT","CREATE VIEW TABLE","CREATE SELECT"], answer:1},
+{q:"45. Advantage of views:", options:["Security","More storage","Cannot simplify","Deletes table"], answer:0},
+{q:"46. Update view:", options:["ALTER VIEW","UPDATE VIEW","MODIFY VIEW","CREATE VIEW"], answer:0},
+{q:"47. Delete view:", options:["DROP TABLE","DELETE VIEW","DROP VIEW","REMOVE VIEW"], answer:2},
+{q:"48. Repeat until false:", options:["IF","REPEAT","CASE","LEAVE"], answer:1},
+{q:"49. WHILE loop condition checked:", options:["Before body","After body","Randomly","Once"], answer:0},
+{q:"50. Test for NULL:", options:["= NULL","IS NULL","LIKE NULL","NOT NULL"], answer:1},
+];
+
+</script>
+
+<script>
+// GENERATE QUESTIONS
+let html = "";
+questions.forEach((q, i) => {
+    html += `<div class='question'>${q.q}</div><div class='options'>`;
+    q.options.forEach((opt, j) => {
+        html += `
+        <label>
+            <input type="radio" name="q${i}" value="${j}"> ${opt}
+        </label>`;
+    });
+    html += "</div>";
+});
+document.write(html);
+</script>
+
+<button type="button" id="submitBtn" onclick="checkAnswers()">Submit Quiz</button>
+
+<div id="result"></div>
+
+<script>
+function checkAnswers() {
+    let score = 0;
+    let mistakes = "";
+    
+    questions.forEach((q, i) => {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected && parseInt(selected.value) === q.answer) {
+            score++;
+        } else {
+            mistakes += `
+                <div class='wrong'>
+                    ❌ <b>${q.q}</b><br>
+                    Correct Answer: <b>${q.options[q.answer]}</b>
+                </div>
+            `;
+        }
+    });
+
+    document.getElementById("result").innerHTML =
+        `<h3>Your Score: ${score} / ${questions.length}</h3>
+         <h3>Mistakes:</h3>${mistakes}`;
+}
+</script>
+
+</form>
+</div>
+
+</body>
+</html>
